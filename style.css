@@ -1147,3 +1147,317 @@ a {
 
     font-size: 13px;
 }
+
+/* Media Queries for Mobile */
+
+/* ================================
+   TABLET RESPONSIVE - 1024px
+================================ */
+
+@media (max-width: 1024px) {
+
+    .container {
+        width: 92%;
+    }
+
+    /* Hero */
+    .hero-container {
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    /* Navigation */
+    .navbar {
+        gap: 20px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+    }
+
+    /* Services and Products */
+    .service-grid,
+    .product-grid,
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* About and Careers */
+    .about-container,
+    .career-container {
+        gap: 35px;
+    }
+
+    /* Contact */
+    .contact-container {
+        padding: 30px;
+        gap: 30px;
+    }
+
+    /* Footer */
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE - 768px
+================================ */
+
+@media (max-width: 768px) {
+
+    /* Global */
+    .container {
+        width: 92%;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+
+    /* Header */
+    .nav-container {
+        min-height: auto;
+        padding: 18px 0;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 20px;
+    }
+
+    .navbar a {
+        font-size: 15px;
+    }
+
+    .nav-button {
+        padding: 9px 16px;
+    }
+
+
+    /* Hero */
+    .hero {
+        min-height: auto;
+        padding: 65px 0;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .hero h1 {
+        font-size: clamp(36px, 8vw, 48px);
+    }
+
+    .hero-subtitle {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-visual {
+        min-height: 320px;
+        padding: 10px;
+    }
+
+    .code-window {
+        max-width: 100%;
+    }
+
+    .code-content {
+        padding: 20px;
+        font-size: 12px;
+        overflow-x: auto;
+    }
+
+    .floating-card {
+        padding: 12px 15px;
+    }
+
+    .floating-card strong {
+        font-size: 19px;
+    }
+
+    .card-one {
+        left: -5px;
+        top: 0;
+    }
+
+    .card-two {
+        right: -5px;
+        bottom: 0;
+    }
+
+
+    /* Stats */
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-box {
+        padding: 25px 10px;
+        border-bottom: 1px solid #374151;
+    }
+
+    .stat-box:nth-child(2) {
+        border-right: none;
+    }
+
+    .stat-box:nth-child(3),
+    .stat-box:nth-child(4) {
+        border-bottom: none;
+    }
+
+    .stat-box h2 {
+        font-size: 27px;
+    }
+
+
+    /* Services */
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        padding: 28px 24px;
+    }
+
+
+    /* Products */
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .product-image {
+        height: 180px;
+    }
+
+    .product-content {
+        padding: 24px;
+    }
+
+
+    /* Careers */
+    .career-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .career-content h2 {
+        font-size: 34px;
+    }
+
+    .job-card {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .job-card h3 {
+        font-size: 15px;
+    }
+
+    .job-card p {
+        font-size: 12px;
+    }
+
+
+    /* About */
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-box {
+        width: 100%;
+        max-width: 330px;
+        min-height: 300px;
+        padding: 30px;
+    }
+
+    .about-content h2 {
+        font-size: 33px;
+    }
+
+    .about-points {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Testimonials */
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .testimonial-card {
+        padding: 28px 24px;
+    }
+
+
+    /* Contact */
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 25px 20px;
+    }
+
+    .contact-info h3 {
+        font-size: 26px;
+    }
+
+    .input-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+
+
+    /* Footer */
+    .footer {
+        padding-top: 45px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 20px;
+        padding-bottom: 35px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-bottom {
+        padding: 18px 12px;
+    }
+}
